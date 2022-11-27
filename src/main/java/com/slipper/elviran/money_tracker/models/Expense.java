@@ -1,6 +1,6 @@
 package com.slipper.elviran.money_tracker.models;
 
-import com.slipper.elviran.money_tracker.enums.SpendingCategoryEnum;
+import com.slipper.elviran.money_tracker.enums.SpendingCategory;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Expense {
     Double amount;
-    SpendingCategoryEnum category;
+    SpendingCategory category;
     List<Shop> shopList;
     Date date;
 }

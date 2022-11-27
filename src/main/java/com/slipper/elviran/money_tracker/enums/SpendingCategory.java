@@ -3,7 +3,7 @@ package com.slipper.elviran.money_tracker.enums;
 import lombok.Getter;
 
 @Getter
-public enum SpendingCategoryEnum {
+public enum SpendingCategory {
     FOOD("food"),
     MEDICAL("Medical"),
     PETS("pets"),
@@ -14,7 +14,7 @@ public enum SpendingCategoryEnum {
     NON_ESSENTIAL("Non Essential");
 
     String label;
-    private SpendingCategoryEnum(String label){
+    private SpendingCategory(String label){
         this.label = label;
     }
 }

@@ -1,6 +1,6 @@
 package com.slipper.elviran.money_tracker.controllers;
 
-import com.slipper.elviran.money_tracker.enums.SpendingCategoryEnum;
+import com.slipper.elviran.money_tracker.enums.SpendingCategory;
 import com.slipper.elviran.money_tracker.models.Expense;
 import com.slipper.elviran.money_tracker.models.Shop;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +20,7 @@ public class ExpenseController {
 
     @PostMapping
     public void addNewExpense(@RequestParam Double amount,
-                              @RequestParam SpendingCategoryEnum category,
+                              @RequestParam SpendingCategory category,
                               @RequestParam Shop shop,
                               @RequestParam(required = false) Date entryDateTime){
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");

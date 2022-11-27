@@ -1,11 +1,26 @@
+server:
+  port: 9000
+
+# H2 Configurations
 spring.datasource:
   url: jdbc:h2:mem:testdb
   driverClassName: org.h2.Driver
   username: sa
   password: password
+  datasource.url: jdbc:h2:file:/data/sampledata
 
+spring.h2.console.enabled: true
 
 spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
 
-server:
-  port: 9000
+# Spring security
+spring.security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: ???
+            clientSecret: ???
+            scope:
+              - email
+              - profile
